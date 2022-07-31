@@ -442,6 +442,10 @@
                 <source>paginator.current</source>
                 <target>(current)</target>
             </trans-unit>
+            <trans-unit id="footer.title">
+                <source>footer.title</source>
+                <target>Projekt Symfony</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
