@@ -1,3 +1,4 @@
+{% if app.user %}
 <div class="section source-code">
     <p>
         {{ 'help.show_code'|trans|raw }}
@@ -33,3 +34,4 @@
         </div>
     </div>
 </div>
+{% endif %}
