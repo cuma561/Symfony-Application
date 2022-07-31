@@ -26,6 +26,7 @@ class AppExtension extends AbstractExtension
 {
     private $localeCodes;
     private $locales;
+    private $file;
 
     public function __construct(string $locales)
     {
@@ -42,6 +43,7 @@ class AppExtension extends AbstractExtension
         return [
             new TwigFunction('locales', [$this, 'getLocales']),
             new TwigFunction('year', [$this, 'getYear']),
+            new TwigFunction('version', [$this, 'getGitVersion']),
         ];
     }
 
@@ -68,5 +70,10 @@ class AppExtension extends AbstractExtension
     {
         $date = new \DateTime();
         return $date->format('Y');
+    }
+    public function getGitVersion()
+    {
+        $file = '../version.txt';
+        return file_get_contents($file);
     }
 }
