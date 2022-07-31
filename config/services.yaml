@@ -39,7 +39,3 @@ services:
     # 'arguments' key and define the arguments just below the service class
     App\EventSubscriber\CommentNotificationSubscriber:
         $sender: '%app.notifications.email_sender%'
-
-    App\Twig\VersionExtension:
-        class: Twig\VersionExtension
-        arguments: ['%kernel.project_dir%/version.txt']
