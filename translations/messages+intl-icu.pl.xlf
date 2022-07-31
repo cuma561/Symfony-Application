@@ -257,7 +257,7 @@
             </trans-unit>
             <trans-unit id="help.login_users">
                 <source>help.login_users</source>
-                <target>Użyj dowolnego z poniższych użytkowników</target>
+                <target>Wpisz dane użytkownika</target>
             </trans-unit>
             <trans-unit id="help.role_user">
                 <source>help.role_user</source>
@@ -269,7 +269,7 @@
             </trans-unit>
             <trans-unit id="help.reload_fixtures">
                 <source>help.reload_fixtures</source>
-                <target>Jeśli powyższe dane logowania nie działają, załaduj ponownie przykładowe dane dla tej aplikacji. Uruchom następującą komendę:</target>
+                <target>Jeśli dane logowania nie działają, załaduj przykładowe dane dla tej aplikacji. Uruchom następującą komendę:</target>
             </trans-unit>
             <trans-unit id="help.add_user">
                 <source>help.add_user</source>

@@ -377,7 +377,7 @@
             </trans-unit>
             <trans-unit id="help.login_users">
                 <source>help.login_users</source>
-                <target>Try either of the following users</target>
+                <target>Enter your user details</target>
             </trans-unit>
             <trans-unit id="help.role_user">
                 <source>help.role_user</source>
@@ -389,7 +389,7 @@
             </trans-unit>
             <trans-unit id="help.reload_fixtures">
                 <source>help.reload_fixtures</source>
-                <target>If these users don't work, reload application fixtures by running this command from the terminal:</target>
+                <target>If users don't work, load application fixtures by running this command from the terminal:</target>
             </trans-unit>
             <trans-unit id="help.add_user">
                 <source>help.add_user</source>

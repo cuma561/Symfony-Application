@@ -4,7 +4,7 @@
 
 {% block javascripts %}
     {{ parent() }}
-    {{ encore_entry_script_tags('login') }}
+    {#{{ encore_entry_script_tags('login') }}#}
 {% endblock %}
 
 {% block main %}
@@ -44,7 +44,7 @@
                 {{ 'help.login_users'|trans }}
             </h3>
 
-            <table class="table table-striped table-bordered table-hover">
+            <!--<table class="table table-striped table-bordered table-hover">
                 <thead>
                     <tr>
                         <th scope="col">{{ 'label.username'|trans }}</th>
@@ -64,7 +64,7 @@
                         <td><code>ROLE_ADMIN</code> ({{ 'help.role_admin'|trans }})</td>
                     </tr>
                 </tbody>
-            </table>
+            </table>-->
 
             <div id="login-users-help" class="panel panel-default">
                 <div class="panel-body">
