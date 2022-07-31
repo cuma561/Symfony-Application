@@ -300,6 +300,10 @@
                 <source>footer.title</source>
                 <target>Projekt Symfony</target>
             </trans-unit>
+            <trans-unit id="git_version">
+                <source>git_version</source>
+                <target>Wersja aplikacji</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
