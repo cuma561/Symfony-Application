@@ -444,7 +444,7 @@
             </trans-unit>
             <trans-unit id="footer.title">
                 <source>footer.title</source>
-                <target>Projekt Symfony</target>
+                <target>The Symfony Project</target>
             </trans-unit>
             <trans-unit id="git_version">
                 <source>git_version</source>
