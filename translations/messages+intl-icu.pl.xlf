@@ -288,6 +288,18 @@
                 <source>paginator.next</source>
                 <target>Następna</target>
             </trans-unit>
+            <trans-unit id="menu.search">
+                <source>menu.search</source>
+                <target>Szukaj</target>
+            </trans-unit>
+            <trans-unit id="post.search_for">
+                <source>post.search_for</source>
+                <target>Szukaj...</target>
+            </trans-unit>
+            <trans-unit id="footer.title">
+                <source>footer.title</source>
+                <target>Projekt Symfony</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
