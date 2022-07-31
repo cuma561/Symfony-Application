@@ -41,7 +41,7 @@ class AppExtension extends AbstractExtension
     {
         return [
             new TwigFunction('locales', [$this, 'getLocales']),
-            new TwigFunction('date', [$this, 'getYear']),
+            new TwigFunction('year', [$this, 'getYear']),
         ];
     }
 
