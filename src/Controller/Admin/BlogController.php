@@ -53,11 +53,11 @@ class BlogController extends AbstractController
      * @Route("/", methods="GET", name="admin_index")
      * @Route("/", methods="GET", name="admin_post_index")
      */
-    public function index(PostRepository $posts): Response
+    public function posts(PostRepository $posts): Response
     {
         $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
 
-        return $this->render('admin/blog/index.html.twig', ['posts' => $authorPosts]);
+        return $this->render('admin/blog/posts.html.twig', ['posts' => $authorPosts]);
     }
 
     /**
