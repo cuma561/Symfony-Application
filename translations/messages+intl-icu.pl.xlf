@@ -135,7 +135,7 @@
             </trans-unit>
             <trans-unit id="action.close">
                 <source>action.close</source>
-                <target>Blisko</target>
+                <target>Zamknij</target>
             </trans-unit>
             <trans-unit id="label.author">
                 <source>label.author</source>
@@ -303,6 +303,54 @@
             <trans-unit id="git_version">
                 <source>git_version</source>
                 <target>Wersja aplikacji</target>
+            </trans-unit>
+            <trans-unit id="action.change_password">
+                <source>action.change_password</source>
+                <target>Zmień hasło</target>
+            </trans-unit>
+            <trans-unit id="menu.user">
+                <source>menu.user</source>
+                <target>Ustawienia użytkownika</target>
+            </trans-unit>
+            <trans-unit id="action.show_post">
+                <source>action.show_post</source>
+                <target>Pokaż post</target>
+            </trans-unit>
+            <trans-unit id="label.tags">
+                <source>label.tags</source>
+                <target>Tagi</target>
+            </trans-unit>
+            <trans-unit id="title.edit_user">
+                <source>title.edit_user</source>
+                <target>Edycja użytkownika</target>
+            </trans-unit>
+            <trans-unit id="label.fullname">
+                <source>label.fullname</source>
+                <target>Imie i Nazwisko</target>
+            </trans-unit>
+            <trans-unit id="action.edit_user">
+                <source>action.edit_user</source>
+                <target>Edycja użytkownika</target>
+            </trans-unit>
+            <trans-unit id="info.change_password">
+                <source>info.change_password</source>
+                <target>Po zmianie hasła zostaniesz wylogowany z aplikacji.</target>
+            </trans-unit>
+            <trans-unit id="title.change_password">
+                <source>title.change_password</source>
+                <target>Zmiana Hasła</target>
+            </trans-unit>
+            <trans-unit id="label.current_password">
+                <source>label.current_password</source>
+                <target>Stare hasło</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="label.new_password_confirm">
+                <source>label.new_password_confirm</source>
+                <target>Powtórz nowe hasło</target>
             </trans-unit>
         </body>
     </file>
