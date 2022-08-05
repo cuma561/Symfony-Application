@@ -13,3 +13,5 @@ Example Symfony Application
 6) Modify blog/index/home page
 7) Change footer Application
 8) Add git version to title Application
+
+# v1.1
