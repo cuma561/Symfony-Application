@@ -8,9 +8,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class IndexController extends AbstractController 
 {
 
-	/* @Route("/", methods="GET", name="admin_index") */
-	public function index(): Response {
-
+	/* @Route("/admin/loggedin/home", methods="GET", name="admin_loggedin_index") */
+	public function index() 
+	{
 		return $this->render('admin/blog/index.html.twig');
 	}
 }
