@@ -450,6 +450,14 @@
                 <source>git_version</source>
                 <target>Version application</target>
             </trans-unit>
+            <trans-unit id="header_admin_page_home_loggedin">
+                <source>header_admin_page_home_loggedin</source>
+                <target>Welcome to Administration Page Home Loggedin</target>
+            </trans-unit>
+            <trans-unit id="menu_admin_index">
+                <source>menu_admin_index</source>
+                <target>Main Page Admin Panel</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

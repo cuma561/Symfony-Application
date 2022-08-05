@@ -352,6 +352,14 @@
                 <source>label.new_password_confirm</source>
                 <target>Powtórz nowe hasło</target>
             </trans-unit>
+            <trans-unit id="header_admin_page_home_loggedin">
+                <source>header_admin_page_home_loggedin</source>
+                <target>Witam w Panelu Administracyjnym</target>
+            </trans-unit>
+            <trans-unit id="menu_admin_index">
+                <source>menu_admin_index</source>
+                <target>Strona główna</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
