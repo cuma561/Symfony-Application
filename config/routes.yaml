@@ -10,3 +10,10 @@ homepage:
     defaults:
         template: default/homepage.html.twig
         _locale: '%locale%'
+
+admin_loggedin_index:
+    path: /{_locale}/admin/loggedin/home
+    controller: App\Controller\Admin\IndexController::index
+    methods:  [GET]
+    defaults:
+        _locale: '%locale%'
