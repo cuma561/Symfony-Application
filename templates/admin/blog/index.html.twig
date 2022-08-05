@@ -1,6 +1,6 @@
 {% extends 'admin/layout.html.twig' %}
 
-{% block body_id 'admin_index' %}
+{% block body_id 'admin_loggedin_index' %}
 
 {% block main %}
     <h1>{{ 'header_admin_page_home_loggedin'|trans }}</h1>
@@ -8,4 +8,5 @@
 
 {% block sidebar %}
     {{ parent() }}
+    {{ show_source_code(_self) }}
 {% endblock %}
