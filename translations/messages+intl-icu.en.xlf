@@ -462,6 +462,14 @@
                 <source>menu_list_element_admin</source>
                 <target>Elements List</target>
             </trans-unit>
+            <trans-unit id="menu.tags_list">
+                <source>menu.tags_list</source>
+                <target>Tags List</target>
+            </trans-unit>
+            <trans-unit id="title.tags_list">
+                <source>title.tags_list</source>
+                <target>All Tags List</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
