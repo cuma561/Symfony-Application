@@ -458,6 +458,10 @@
                 <source>menu_admin_index</source>
                 <target>Main Page Admin Panel</target>
             </trans-unit>
+            <trans-unit id="menu_list_element_admin">
+                <source>menu_list_element_admin</source>
+                <target>Elements List</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
