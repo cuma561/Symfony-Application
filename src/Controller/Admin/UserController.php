@@ -8,6 +8,6 @@ class UserController extends AbstractController
 {
 	public function index() {
 
-		return $this->render('admin/blog/user.html.twig');
+		return $this->render('admin/user/user.html.twig');
 	}
 }
