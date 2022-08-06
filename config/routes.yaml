@@ -24,3 +24,10 @@ admin_user_index:
     methods: [GET]
     defaults:
         _locale: '%locale%'
+
+admin_tags_index:
+    path: /{_locale}/admin/tags
+    controller: App\Controller\Admin\TagController:index
+    methods: [GET]
+    defaults:
+        _locale: '%locale%'
