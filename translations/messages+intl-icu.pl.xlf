@@ -368,6 +368,14 @@
                 <source>label.email</source>
                 <target>Email</target>
             </trans-unit>
+            <trans-unit id="menu.user_list">
+                <source>menu.user_list</source>
+                <target>Lista użytkowników</target>
+            </trans-unit>
+            <trans-unit id="title.user_list">
+                <source>title.user_list</source>
+                <target>Lista wszystkich użytkowników</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

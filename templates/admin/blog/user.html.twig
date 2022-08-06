@@ -1,0 +1,13 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% block body_id 'admin_user_index' %}
+
+{% block main %}
+	<h1>{{ 'title.user_list'|trans }}</h1>
+{% endblock %}
+
+{% block sidebar %}
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}
