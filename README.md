@@ -24,3 +24,4 @@ Example Symfony Application
 6) Add new translation
 7) Moving index page to posts page
 8) Change index page
+9) Add new routing
