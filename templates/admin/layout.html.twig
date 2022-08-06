@@ -11,16 +11,47 @@
             <i class="fa fa-home" arai-hidden="true"></i> {{ 'menu_admin_index'|trans }}
         </a>
     </li>
-    <li>
-        <a href="{{ path('admin_post_index') }}">
-            <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'menu.post_list'|trans }}
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="user">
+            <span>{{ 'menu_list_element_admin'|trans }}</span>
+            <span class="caret"></span>
         </a>
+        <ul class="dropdown-menu" role="menu">
+            <li>
+                <a href="{{ path('admin_post_index') }}">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'menu.post_list'|trans }}
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="{{ path('blog_index') }}">
+                    <i class="fa fa-home" aria-hidden="true"></i> {{ 'menu.back_to_blog'|trans }}
+                </a>
+            </li>
+        </ul>
     </li>
-    <li>
-        <a href="{{ path('blog_index') }}">
-            <i class="fa fa-home" aria-hidden="true"></i> {{ 'menu.back_to_blog'|trans }}
-        </a>
-    </li>
+    {% if app.user %}
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="user">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="caret"></span>
+                <span class="sr-only">{{ app.user.fullname }}</span>
+            </a>
+            <ul class="dropdown-menu user" role="menu" aria-labelledby="user">
+                <li>
+                    <a href="{{ path('user_edit') }}">
+                        <i class="fa fa-edit" aria-hidden="true"></i> {{ 'menu.user'|trans }}
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="{{ path('security_logout') }}">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> {{ 'menu.logout'|trans }}
+                    </a>
+                </li>
+            </ul>
+        </li>
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
