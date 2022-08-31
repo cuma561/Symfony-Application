@@ -38,3 +38,10 @@ admin_user_edit:
     methods: [GET|POST]
     defaults:
         _locale: '%locale%'
+
+admin_user_delete:
+    path: /{_locale}/admin/user/{id}/delete
+    controller: App\Controller\Admin\UserController:delete
+    methods: [POST]
+    defaults:
+        _locale: '%locale%'

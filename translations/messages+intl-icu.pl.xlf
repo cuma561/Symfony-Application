@@ -408,6 +408,26 @@
                 <source>label.create_user</source>
                 <target>Dodaj użytkownika</target>
             </trans-unit>
+            <trans-unit id="user.deleted_successfully">
+                <source>user.deleted_successfully</source>
+                <target>Użytkownik usunięty pomyślnie!</target>
+            </trans-unit>
+            <trans-unit id="action.delete_user">
+                <source>action.delete_user</source>
+                <target>Usuń użytkownika</target>
+            </trans-unit>
+            <trans-unit id="label.delete_user">
+                <source>label.delete_user</source>
+                <target>Usuń użytkownika</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.title">
+                <source>delete_user_modal.title</source>
+                <target>Czy na pewno chcesz usunąć tego użytkownika?</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.body">
+                <source>delete_user_modal.body</source>
+                <target>Ta akcja nie może zostać cofnięta.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

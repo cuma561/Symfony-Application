@@ -46,7 +46,20 @@ class UserController extends AbstractController
         ]);
 	}
 
-	public function delete() {
+	public function delete(Request $request, User $user): Response {
 
+		if (!$this->isCsrfTokenValid('delete', $request->request->get('token'))) {
+            return $this->redirectToRoute('admin_user_index');
+        }
+
+        //$user->getUser()->clear();
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($user);
+        $em->flush();
+
+        $this->addFlash('success', 'user.deleted_successfully');
+
+        return $this->redirectToRoute('admin_user_index');
 	}
 }

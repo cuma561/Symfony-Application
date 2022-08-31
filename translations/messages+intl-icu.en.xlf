@@ -498,6 +498,26 @@
                 <source>label.create_user</source>
                 <target>Create user</target>
             </trans-unit>
+            <trans-unit id="user.deleted_successfully">
+                <source>user.deleted_successfully</source>
+                <target>User deleted successfully!</target>
+            </trans-unit>
+            <trans-unit id="action.delete_user">
+                <source>action.delete_user</source>
+                <target>Delete user</target>
+            </trans-unit>
+            <trans-unit id="label.delete_user">
+                <source>label.delete_user</source>
+                <target>Delete user</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.title">
+                <source>delete_user_modal.title</source>
+                <target>Are you sure you want to delete this post?</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.body">
+                <source>delete_user_modal.body</source>
+                <target>This action cannot be undone.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
