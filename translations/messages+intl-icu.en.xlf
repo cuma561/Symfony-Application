@@ -526,6 +526,14 @@
                 <source>title.user_new</source>
                 <target>User creation</target>
             </trans-unit>
+            <trans-unit id="label.confPassword">
+                <source>label.confPassword</source>
+                <target>Confirm Password</target>
+            </trans-unit>
+            <trans-unit id="label.roles">
+                <source>label.roles</source>
+                <target>Role</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
