@@ -32,3 +32,9 @@ admin_user_show:
     defaults:
         _locale: '%locale%'
 
+admin_user_edit:
+    path: /{_locale}/admin/user/{id}/edit
+    controller: App\Controller\Admin\UserController::edit
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'

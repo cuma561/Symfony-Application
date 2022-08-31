@@ -27,7 +27,7 @@
 
 {% block sidebar %}
     <div class="section">
-        <a href="" class="btn btn-lg btn-block btn-success">
+        <a href="{{ path('admin_user_edit', {id: user.id}) }}" class="btn btn-lg btn-block btn-success">
         	<i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit_user'|trans }}
         </a>
     </div>

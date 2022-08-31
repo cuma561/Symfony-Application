@@ -392,6 +392,22 @@
                 <source>user.btnBack</source>
                 <target>Powrót do listy użytowników</target>
             </trans-unit>
+            <trans-unit id="user.updated_successfully">
+                <source>user.updated_successfully</source>
+                <target>Użytkownik zaaktualizowany pomyślnie!</target>
+            </trans-unit>
+            <trans-unit id="action.user_show">
+                <source>action.user_show</source>
+                <target>Pokaż użytkownika</target>
+            </trans-unit>
+            <trans-unit id="title.user_edit">
+                <source>title.user_edit</source>
+                <target>Edycja użytkownika</target>
+            </trans-unit>
+            <trans-unit id="label.create_user">
+                <source>label.create_user</source>
+                <target>Dodaj użytkownika</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
