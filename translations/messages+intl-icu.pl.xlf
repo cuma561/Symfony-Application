@@ -384,6 +384,14 @@
                 <source>user.no_users_found</source>
                 <target>Nie znaleziono użytkowników</target>
             </trans-unit>
+            <trans-unit id="user.userDetais">
+                <source>user.userDetails</source>
+                <target>Szczegóły użytkownika</target>
+            </trans-unit>
+            <trans-unit id="user.btnBack">
+                <source>user.btnBack</source>
+                <target>Powrót do listy użytowników</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

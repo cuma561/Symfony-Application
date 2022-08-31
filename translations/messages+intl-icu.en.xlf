@@ -478,6 +478,14 @@
                 <source>user.no_users_found</source>
                 <target>No users found</target>
             </trans-unit>
+            <trans-unit id="user.userDetais">
+                <source>user.userDetails</source>
+                <target>User Details</target>
+            </trans-unit>
+            <trans-unit id="user.btnBack">
+                <source>user.btnBack</source>
+                <target>Back to User List</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

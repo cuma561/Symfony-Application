@@ -24,3 +24,11 @@ admin_user_index:
     methods: [GET]
     defaults:
         _locale: '%locale%'
+
+admin_user_show:
+    path: /{_locale}/admin/user/{id}
+    controller: App\Controller\Admin\UserController::show
+    methods: [GET]
+    defaults:
+        _locale: '%locale%'
+
