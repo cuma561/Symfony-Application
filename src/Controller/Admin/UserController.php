@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class UserController extends AbstractController
 {
@@ -23,8 +24,34 @@ class UserController extends AbstractController
 		return $this->render('admin/user/show.html.twig', ['user' => $user]);
 	}
 
-	public function new() {
+	public function new(Request $request): Response {
 
+		$user = new User();
+
+		$form = $this->createForm(UserType::class, $user)
+            ->add('saveAndCreateNew', SubmitType::class);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
+
+            
+            $this->addFlash('success', 'user.created_successfully');
+
+            if ($form->get('saveAndCreateNew')->isClicked()) {
+                return $this->redirectToRoute('admin_user_new');
+            }
+
+            return $this->redirectToRoute('admin_user_index');
+        }
+
+        return $this->render('admin/user/new.html.twig', [
+            'user' => $user,
+            'form' => $form->createView(),
+        ]);
 	}
 
 	public function edit(Request $request, User $user): Response {

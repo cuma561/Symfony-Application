@@ -25,6 +25,13 @@ admin_user_index:
     defaults:
         _locale: '%locale%'
 
+admin_user_new:
+    path: /{_locale}/admin/user/new
+    controller: App\Controller\Admin\UserController::new
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'
+
 admin_user_show:
     path: /{_locale}/admin/user/{id}
     controller: App\Controller\Admin\UserController::show

@@ -71,6 +71,8 @@ class User implements UserInterface, \Serializable
      */
     private $password;
 
+    private $confPassword;
+
     /**
      * @var array
      *
@@ -121,6 +123,16 @@ class User implements UserInterface, \Serializable
     public function setPassword(string $password): void
     {
         $this->password = $password;
+    }
+
+    public function getConfPassword(): ?string
+    {
+        return $this->confPassword;
+    }
+
+    public function setConfPassword(string $confPassword): void
+    {
+        $this->confPassword = $confPassword;
     }
 
     /**

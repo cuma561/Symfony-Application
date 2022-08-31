@@ -428,6 +428,14 @@
                 <source>delete_user_modal.body</source>
                 <target>Ta akcja nie może zostać cofnięta.</target>
             </trans-unit>
+            <trans-unit id="user.created_successfully">
+                <source>user.created_successfully</source>
+                <target>Użytkownik został utworzony!</target>
+            </trans-unit>
+            <trans-unit id="title.user_new">
+                <source>title.user_new</source>
+                <target>Dodawanie użytkownika</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

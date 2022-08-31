@@ -518,6 +518,14 @@
                 <source>delete_user_modal.body</source>
                 <target>This action cannot be undone.</target>
             </trans-unit>
+            <trans-unit id="user.created_successfully">
+                <source>user.created_successfully</source>
+                <target>User created successfully!</target>
+            </trans-unit>
+            <trans-unit id="title.user_new">
+                <source>title.user_new</source>
+                <target>User creation</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
