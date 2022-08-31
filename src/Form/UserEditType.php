@@ -3,13 +3,14 @@
 namespace App\Form;
 
 use App\Entity\User;
-use App\Form\Type\RoleSelectType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\CallbackTransformer;
 
 
 class UserEditType extends AbstractType
@@ -30,10 +31,24 @@ class UserEditType extends AbstractType
             ->add('email', EmailType::class, [
                 'label' => 'label.email',
             ])
-            ->add('roles', RoleSelectType::class, [
-                'label' => 'label.roles'
+            ->add('roles', ChoiceType::class, [
+                'label' => 'label.roles',
+                'choices'  => [
+                      'User' => 'ROLE_USER',
+                      'Admin' => 'ROLE_ADMIN',
+                ]
             ])
         ;
+
+        $builder->get('roles')
+            ->addModelTransformer(new CallbackTransformer(
+                function ($rolesArray) {
+                    return count($rolesArray)? $rolesArray[0]: null;
+                },
+                function ($rolesString) {
+                    return [$rolesString];
+                }
+        ));
     }
 
     /**
