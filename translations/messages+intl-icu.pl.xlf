@@ -444,6 +444,14 @@
                 <source>title.user_new</source>
                 <target>Dodawanie użytkownika</target>
             </trans-unit>
+            <trans-unit id="label.confPassword">
+                <source>label.confPassword</source>
+                <target>Powtórz Hasło</target>
+            </trans-unit>
+            <trans-unit id="label.roles">
+                <source>label.roles</source>
+                <target>Rola</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
