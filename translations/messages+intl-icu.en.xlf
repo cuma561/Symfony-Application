@@ -478,6 +478,14 @@
                 <source>title.tags_list</source>
                 <target>All Tags List</target>
             </trans-unit>
+            <trans-unit id="action.create_user">
+                <source>action.create_user</source>
+                <target>Add User</target>
+            </trans-unit>
+            <trans-unit id="user.no_users_found">
+                <source>user.no_users_found</source>
+                <target>No users found</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
