@@ -25,6 +25,34 @@ admin_user_index:
     defaults:
         _locale: '%locale%'
 
+admin_user_new:
+    path: /{_locale}/admin/user/new
+    controller: App\Controller\Admin\UserController::new
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'
+
+admin_user_show:
+    path: /{_locale}/admin/user/{id}
+    controller: App\Controller\Admin\UserController::show
+    methods: [GET]
+    defaults:
+        _locale: '%locale%'
+
+admin_user_edit:
+    path: /{_locale}/admin/user/{id}/edit
+    controller: App\Controller\Admin\UserController::edit
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'
+
+admin_user_delete:
+    path: /{_locale}/admin/user/{id}/delete
+    controller: App\Controller\Admin\UserController:delete
+    methods: [POST]
+    defaults:
+        _locale: '%locale%'
+
 admin_tags_index:
     path: /{_locale}/admin/tags
     controller: App\Controller\Admin\TagController:index

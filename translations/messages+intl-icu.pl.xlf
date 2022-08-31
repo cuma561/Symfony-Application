@@ -392,6 +392,58 @@
                 <source>user.no_users_found</source>
                 <target>Nie znaleziono użytkowników</target>
             </trans-unit>
+            <trans-unit id="user.userDetais">
+                <source>user.userDetails</source>
+                <target>Szczegóły użytkownika</target>
+            </trans-unit>
+            <trans-unit id="user.btnBack">
+                <source>user.btnBack</source>
+                <target>Powrót do listy użytowników</target>
+            </trans-unit>
+            <trans-unit id="user.updated_successfully">
+                <source>user.updated_successfully</source>
+                <target>Użytkownik zaaktualizowany pomyślnie!</target>
+            </trans-unit>
+            <trans-unit id="action.user_show">
+                <source>action.user_show</source>
+                <target>Pokaż użytkownika</target>
+            </trans-unit>
+            <trans-unit id="title.user_edit">
+                <source>title.user_edit</source>
+                <target>Edycja użytkownika</target>
+            </trans-unit>
+            <trans-unit id="label.create_user">
+                <source>label.create_user</source>
+                <target>Dodaj użytkownika</target>
+            </trans-unit>
+            <trans-unit id="user.deleted_successfully">
+                <source>user.deleted_successfully</source>
+                <target>Użytkownik usunięty pomyślnie!</target>
+            </trans-unit>
+            <trans-unit id="action.delete_user">
+                <source>action.delete_user</source>
+                <target>Usuń użytkownika</target>
+            </trans-unit>
+            <trans-unit id="label.delete_user">
+                <source>label.delete_user</source>
+                <target>Usuń użytkownika</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.title">
+                <source>delete_user_modal.title</source>
+                <target>Czy na pewno chcesz usunąć tego użytkownika?</target>
+            </trans-unit>
+            <trans-unit id="delete_user_modal.body">
+                <source>delete_user_modal.body</source>
+                <target>Ta akcja nie może zostać cofnięta.</target>
+            </trans-unit>
+            <trans-unit id="user.created_successfully">
+                <source>user.created_successfully</source>
+                <target>Użytkownik został utworzony!</target>
+            </trans-unit>
+            <trans-unit id="title.user_new">
+                <source>title.user_new</source>
+                <target>Dodawanie użytkownika</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
