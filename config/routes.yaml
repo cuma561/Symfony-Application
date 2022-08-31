@@ -19,8 +19,8 @@ admin_loggedin_index:
         _locale: '%locale%'
 
 admin_user_index:
-    path: /{_locale}/admin/users
-    controller: App\Controller\Admin\UserController::index
+    path: /{_locale}/admin/user
+    controller: App\Controller\Admin\UserController::users
     methods: [GET]
     defaults:
         _locale: '%locale%'
