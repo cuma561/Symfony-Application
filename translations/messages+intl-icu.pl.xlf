@@ -452,6 +452,10 @@
                 <source>label.roles</source>
                 <target>Rola</target>
             </trans-unit>
+            <trans-unit id="tags.no_found_tag">
+                <source>tags.no_found_tag</source>
+                <target>Nie znaleziono tagów!</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
