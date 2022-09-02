@@ -25,3 +25,29 @@ Example Symfony Application
 7) Moving index page to posts page
 8) Change index page
 9) Add new routing
+
+# v1.2
+
+1) Add UserList
+2) Add EditUser
+3) Add ShowUser
+4) Add RemoveUser
+5) Add CreateUser
+6) Add new routing
+7) Add new translations
+
+# v1.3
+
+1) Add TagsList
+2) Add EditTag
+3) Add ShowTag
+4) Add RemoveTag
+5) Add CreateTag
+6) Add new routing
+7) Add new translations
+
+# v1.4
+
+1) Update project -> remove comments with file application
+2) Update README.md
+3) Remove DataFixture folder with application
