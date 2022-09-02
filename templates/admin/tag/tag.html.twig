@@ -39,6 +39,14 @@
 {% endblock %}
 
 {% block sidebar %}
+
+	<div class="section actions">
+        <a href="" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-plus" aria-hidden="true"></i> {{ 'action.create_tags'|trans }}
+        </a>
+    </div>
+
+
 	{{ parent() }}
 
     {{ show_source_code(_self) }}

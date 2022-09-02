@@ -546,6 +546,10 @@
                 <source>tags.no_found_tag</source>
                 <target>No found tags!</target>
             </trans-unit>
+            <trans-unit id="action.create_tags">
+                <source>action.create_tags</source>
+                <target>Create Tag</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
