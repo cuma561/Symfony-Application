@@ -24,7 +24,7 @@
 
 {% block sidebar %}
     <div class="section">
-        <a href="" class="btn btn-lg btn-block btn-success">
+        <a href="{{ path('admin_tags_edit', {id: tag.id}) }}" class="btn btn-lg btn-block btn-success">
         	<i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit_tags'|trans }}
         </a>
     </div>

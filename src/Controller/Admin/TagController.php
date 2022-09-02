@@ -55,6 +55,25 @@ class TagController extends AbstractController
 		return $this->render('admin/tag/show.html.twig', ['tag' => $tag]);
 	}
 
+    public function edit(Request $request, Tag $tag): Response {
+
+        $form = $this->createForm(TagType::class, $tag);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->getDoctrine()->getManager()->flush();
+
+            $this->addFlash('success', 'tag.updated_successfully');
+
+            return $this->redirectToRoute('admin_tags_edit', ['id' => $tag->getId()]);
+        }
+
+        return $this->render('admin/tag/edit.html.twig', [
+            'tag' => $tag,
+            'form' => $form->createView(),
+        ]);
+    }
+
 	public function delete(Request $request, Tag $tag): Response {
 		
 		if (!$this->isCsrfTokenValid('delete', $request->request->get('token'))) {

@@ -23,7 +23,7 @@
                        		<a href="{{ path('admin_tags_show', {id: tag.id}) }}" class="btn btn-sm btn-default">
                             	<i class="fa fa-eye" aria-hidden="true"></i> {{ 'action.show'|trans }}
                         	</a>
-                        	<a href="" class="btn btn-sm btn-primary">
+                        	<a href="{{ path('admin_tags_edit', {id: tag.id}) }}" class="btn btn-sm btn-primary">
                             	<i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit'|trans }}
                         	</a>
                     	</div>

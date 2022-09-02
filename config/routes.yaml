@@ -74,6 +74,13 @@ admin_tags_show:
     defaults:
         _locale: '%locale%'
 
+admin_tags_edit:
+    path: /{_locale}/admin/tags/{id}/edit
+    controller: App\Controller\Admin\TagController::edit
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'
+
 admin_tags_delete:
     path: /{_locale}/admin/tags/{id}/delete
     controller: App\Controller\Admin\TemplateController::delete
