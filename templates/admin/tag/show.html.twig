@@ -1,0 +1,39 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% block body_id 'admin_tags_show' %}
+
+{% block main %}
+
+<h1>{{ 'tag.tagDetails'|trans }}</h1>
+
+<hr/>
+
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<p><b>{{ 'label.tagName'|trans }}</b> {{ tag.name }}</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<a href="{{ path('admin_tags_index') }}" class="btn btn-lg btn-block btn-primary">{{ 'tags.btnBack'|trans }}</a>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="" class="btn btn-lg btn-block btn-success">
+        	<i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit_tags'|trans }}
+        </a>
+    </div>
+
+    <div class="section">
+        {#{{ include('admin/tag/_delete_form.html.twig', {tag: tag}, with_context = false) }}#}
+    </div>
+    
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

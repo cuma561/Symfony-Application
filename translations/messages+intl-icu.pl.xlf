@@ -458,7 +458,23 @@
             </trans-unit>
             <trans-unit id="action.create_tags">
                 <source>action.create_tags</source>
-                <target>Tworzenie Tagów</target>
+                <target>Dodawanie Tagów</target>
+            </trans-unit>
+            <trans-unit id="tags.btnBack">
+                <source>tags.btnBack</source>
+                <target>Powrót na listę tagów</target>
+            </trans-unit>
+            <trans-unit id="label.tagName">
+                <source>label.tagName</source>
+                <target>Nazwa tagu:</target>
+            </trans-unit>
+            <trans-unit id="tag.tagDetails">
+                <source>tag.tagDetails</source>
+                <target>Szczegóły Tagu</target>
+            </trans-unit>
+            <trans-unit id="action.edit_tags">
+                <source>action.edit_tags</source>
+                <target>Edycja tagu</target>
             </trans-unit>
         </body>
     </file>

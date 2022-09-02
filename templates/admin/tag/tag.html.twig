@@ -20,7 +20,7 @@
 					<td>{{ tag.name }}</td>
 					<td class="text-center">
                     	<div class="item-actions">
-                       		<a href="" class="btn btn-sm btn-default">
+                       		<a href="{{ path('admin_tags_show', {id: tag.id}) }}" class="btn btn-sm btn-default">
                             	<i class="fa fa-eye" aria-hidden="true"></i> {{ 'action.show'|trans }}
                         	</a>
                         	<a href="" class="btn btn-sm btn-primary">

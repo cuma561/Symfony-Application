@@ -59,3 +59,10 @@ admin_tags_index:
     methods: [GET]
     defaults:
         _locale: '%locale%'
+
+admin_tags_show:
+    path: /{_locale}/admin/tags/{id}
+    controller: App\Controller\Admin\TagController::show
+    methods: [GET]
+    defaults:
+        _locale: '%locale%'

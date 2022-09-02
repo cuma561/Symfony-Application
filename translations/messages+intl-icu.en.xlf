@@ -550,6 +550,22 @@
                 <source>action.create_tags</source>
                 <target>Create Tag</target>
             </trans-unit>
+            <trans-unit id="tags.btnBack">
+                <source>tags.btnBack</source>
+                <target>Back to tags list</target>
+            </trans-unit>
+            <trans-unit id="label.tagName">
+                <source>label.tagName</source>
+                <target>Name tags:</target>
+            </trans-unit>
+            <trans-unit id="tag.tagDetails">
+                <source>tag.tagDetails</source>
+                <target>Tag Details</target>
+            </trans-unit>
+            <trans-unit id="action.edit_tags">
+                <source>action.edit_tags</source>
+                <target>Edit tags</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
