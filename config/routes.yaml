@@ -60,6 +60,13 @@ admin_tags_index:
     defaults:
         _locale: '%locale%'
 
+admin_tags_new:
+    path: /{_locale}/admin/tags/new
+    controller: App\Controller\Admin\TagController::new
+    methods: [GET|POST]
+    defaults:
+        _locale: '%locale%'
+
 admin_tags_show:
     path: /{_locale}/admin/tags/{id}
     controller: App\Controller\Admin\TagController::show

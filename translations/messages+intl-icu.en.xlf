@@ -582,6 +582,18 @@
                 <source>label.delete_tag</source>
                 <target>Delete Tag</target>
             </trans-unit>
+            <trans-unit id="title.tag_new">
+                <source>title.tag_new</source>
+                <target>Add new tag</target>
+            </trans-unit>
+            <trans-unit id="label.create_tag">
+                <source>label.create_tag</source>
+                <target>Add tag</target>
+            </trans-unit>
+            <trans-unit id="tag.btnBack">
+                <source>tag.btnBack</source>
+                <target>Back to list tags</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

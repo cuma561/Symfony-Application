@@ -3,10 +3,12 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Tag;
+use App\Form\TagType;
 use App\Repository\TagRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class TagController extends AbstractController
 {
@@ -16,6 +18,36 @@ class TagController extends AbstractController
 		$tagsList = $tags->findAll($tags);
 
 		return $this->render('admin/tag/tag.html.twig', ['tags' => $tagsList]);
+	}
+
+	public function new(Request $request): Response {
+
+		$tag = new Tag();
+
+		$form = $this->createForm(TagType::class, $tag)
+            ->add('saveAndCreateNew', SubmitType::class);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($tag);
+            $em->flush();
+
+            
+            $this->addFlash('success', 'tag.created_successfully');
+
+            if ($form->get('saveAndCreateNew')->isClicked()) {
+                return $this->redirectToRoute('admin_tags_new');
+            }
+
+            return $this->redirectToRoute('admin_tags_index');
+        }
+
+        return $this->render('admin/tag/new.html.twig', [
+            'tag' => $tag,
+            'form' => $form->createView(),
+        ]);
 	}
 
 	public function show(Tag $tag): Response {
