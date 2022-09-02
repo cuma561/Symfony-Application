@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace App\Repository;
 
 use App\Entity\Post;
@@ -18,16 +9,6 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use function Symfony\Component\String\u;
 
-/**
- * This custom Doctrine repository contains some methods which are useful when
- * querying for blog post information.
- *
- * See https://symfony.com/doc/current/doctrine.html#querying-for-objects-the-repository
- *
- * @author Ryan Weaver <weaverryan@gmail.com>
- * @author Javier Eguiluz <javier.eguiluz@gmail.com>
- * @author Yonel Ceruto <yonelceruto@gmail.com>
- */
 class PostRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -81,15 +62,11 @@ class PostRepository extends ServiceEntityRepository
             ->getResult();
     }
 
-    /**
-     * Transforms the search string into an array of search terms.
-     */
     private function extractSearchTerms(string $searchQuery): array
     {
         $searchQuery = u($searchQuery)->replaceMatches('/[[:space:]]+/', ' ')->trim();
         $terms = array_unique($searchQuery->split(' '));
 
-        // ignore the search terms that are too short
         return array_filter($terms, function ($term) {
             return 2 <= $term->length();
         });

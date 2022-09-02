@@ -1,9 +1,3 @@
-/**
- * jQuery plugin for an instant searching.
- *
- * @author Oleg Voronkovich <oleg-voronkovich@yandex.ru>
- * @author Yonel Ceruto <yonelceruto@gmail.com>
- */
 (function ($) {
     'use strict';
 
@@ -13,8 +7,7 @@
         })
     };
 
-    // INSTANTS SEARCH PUBLIC CLASS DEFINITION
-    // =======================================
+    
 
     var InstantSearch = function (element, options) {
         this.$input = $(element);
@@ -85,8 +78,7 @@
         }
     };
 
-    // INSTANTS SEARCH PLUGIN DEFINITION
-    // =================================
+    
 
     function Plugin(option) {
         return this.each(function () {

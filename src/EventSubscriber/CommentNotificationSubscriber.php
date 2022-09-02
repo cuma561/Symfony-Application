@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace App\EventSubscriber;
 
 use App\Entity\Comment;
@@ -19,11 +10,6 @@ use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-/**
- * Notifies post's author about new comments.
- *
- * @author Oleg Voronkovich <oleg-voronkovich@yandex.ru>
- */
 class CommentNotificationSubscriber implements EventSubscriberInterface
 {
     private $mailer;
@@ -63,7 +49,7 @@ class CommentNotificationSubscriber implements EventSubscriberInterface
             '%link%' => $linkToPost,
         ]);
 
-        // See https://symfony.com/doc/current/mailer.html
+
         $email = (new Email())
             ->from($this->sender)
             ->to($post->getAuthor()->getEmail())
@@ -71,9 +57,7 @@ class CommentNotificationSubscriber implements EventSubscriberInterface
             ->html($body)
         ;
 
-        // In config/packages/dev/mailer.yaml the delivery of messages is disabled.
-        // That's why in the development environment you won't actually receive any email.
-        // However, you can inspect the contents of those unsent emails using the debug toolbar.
+
         $this->mailer->send($email);
     }
 }

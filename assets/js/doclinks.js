@@ -1,6 +1,5 @@
 'use strict';
 
-// Wraps some elements in anchor tags referencing to the Symfony documentation
 $(function() {
     var $modal = $('#sourceCodeModal');
     var $controllerCode = $modal.find('code.php');
@@ -10,14 +9,12 @@ $(function() {
         return '<a class="doclink" target="_blank" href="' + url + '">' + content + '</a>';
     };
 
-    // Wraps links to the Symfony documentation
     $modal.find('.hljs-comment').each(function() {
         $(this).html($(this).html().replace(/https:\/\/symfony.com\/doc\/[\w/.#-]+/g, function(url) {
             return anchor(url, url);
         }));
     });
 
-    // Wraps Symfony's annotations
     var annotations = {
         '@Cache': 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/cache.html',
         '@IsGranted': 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/security.html#isgranted',
@@ -34,7 +31,6 @@ $(function() {
         }
     });
 
-    // Wraps Twig's tags
     $templateCode.find('.hljs-template-tag > .hljs-name').each(function() {
         var tag = $(this).text();
 
@@ -47,7 +43,6 @@ $(function() {
         $(this).html(anchor(url, tag));
     });
 
-    // Wraps Twig's functions
     $templateCode.find('.hljs-template-variable > .hljs-name').each(function() {
         var func = $(this).text();
 

@@ -5,8 +5,6 @@ import Bloodhound from "bloodhound-js";
 import 'bootstrap-tagsinput';
 
 $(function() {
-    // Datetime picker initialization.
-    // See https://eonasdan.github.io/bootstrap-datetimepicker/
     $('[data-toggle="datetimepicker"]').datetimepicker({
         icons: {
             time: 'fa fa-clock-o',
@@ -21,8 +19,6 @@ $(function() {
         }
     });
 
-    // Bootstrap-tagsinput initialization
-    // https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
     var $input = $('input[data-toggle="tagsinput"]');
     if ($input.length) {
         var source = new Bloodhound({
@@ -43,7 +39,6 @@ $(function() {
     }
 });
 
-// Handling the modal confirmation message.
 $(document).on('submit', 'form[data-confirmation]', function (event) {
     var $form = $(this),
         $confirm = $('#confirmationModal');
