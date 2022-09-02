@@ -476,6 +476,22 @@
                 <source>action.edit_tags</source>
                 <target>Edycja tagu</target>
             </trans-unit>
+            <trans-unit id="action.delete_tag">
+                <source>action.delete_tag</source>
+                <target>Usuń tag</target>
+            </trans-unit>
+            <trans-unit id="delete_tag_modal.title">
+                <source>delete_tag_modal.title</source>
+                <target>Czy na pewno chcesz usunąć ten tag?</target>
+            </trans-unit>
+            <trans-unit id="delete_tag_modal.body">
+                <source>delete_tag_modal.body</source>
+                <target>Ta akcja nie może zostać cofnięta.</target>
+            </trans-unit>
+            <trans-unit id="label.delete_tag">
+                <source>label.delete_tag</source>
+                <target>Usuń Tag</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

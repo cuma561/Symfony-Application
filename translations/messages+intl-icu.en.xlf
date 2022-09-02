@@ -566,6 +566,22 @@
                 <source>action.edit_tags</source>
                 <target>Edit tags</target>
             </trans-unit>
+            <trans-unit id="action.delete_tag">
+                <source>action.delete_tag</source>
+                <target>Delete tag</target>
+            </trans-unit>
+            <trans-unit id="delete_tag_modal.title">
+                <source>delete_tag_modal.title</source>
+                <target>Are you sure you want to delete this tag?</target>
+            </trans-unit>
+            <trans-unit id="delete_tag_modal.body">
+                <source>delete_tag_modal.body</source>
+                <target>This action cannot be undone.</target>
+            </trans-unit>
+            <trans-unit id="label.delete_tag">
+                <source>label.delete_tag</source>
+                <target>Delete Tag</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

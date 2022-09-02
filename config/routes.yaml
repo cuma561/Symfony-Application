@@ -66,3 +66,10 @@ admin_tags_show:
     methods: [GET]
     defaults:
         _locale: '%locale%'
+
+admin_tags_delete:
+    path: /{_locale}/admin/tags/{id}/delete
+    controller: App\Controller\Admin\TemplateController::delete
+    methods: [POST]
+    defaults:
+        _locale: '%locale%'
