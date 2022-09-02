@@ -33,4 +33,4 @@ bin/
 data/
 CONTRIBUTING.md
 assets/js/login.js
-
+/src/DataFixtures/AppFixtures.php
