@@ -51,3 +51,7 @@ Example Symfony Application
 1) Update project -> remove comments with file application
 2) Update README.md
 3) Remove DataFixture folder with application
+
+# v1.5
+
+1) Remove one translations -> Deutschland laguages
