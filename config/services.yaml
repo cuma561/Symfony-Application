@@ -1,6 +1,6 @@
 parameters:
     locale: 'pl'
-    app_locales: en|de|pl
+    app_locales: en|pl
     app.notifications.email_sender: anonymous@example.com
 
 services:
