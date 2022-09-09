@@ -8,6 +8,10 @@
 {% block body_id 'blog_search' %}
 
 {% block main %}
+
+    <h1>{{ 'header_search'|trans }}</h1>
+
+
     <form action="{{ path('blog_search') }}" method="get">
         <div class="form-group">
             <input name="q"
